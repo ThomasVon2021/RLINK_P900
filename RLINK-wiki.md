@@ -32,7 +32,7 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 |  Antenna Interface  |  SMA
 |  Size  |  50mm * 38mm * 14mm
 |  Weight  |  39g  |
-|
+
 ### 1.3 Physical Dimension
 The module size is shown in Figure 1.2. The mounting hole is a through hole with a diameter of 3.2, which is suitable for M3 bolt.
 <div  align="center">
