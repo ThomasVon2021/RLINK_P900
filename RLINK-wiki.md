@@ -30,7 +30,7 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 |  Blocking  |  +/- 1 MHz > 55 dBc<br>+/- 2.5 MHz > 60 dBc<br>+/- 5 MHz > 65 dBc<br>> 930 MHz > 70 dBc<br>< 890 MHz > 70 dBc
 |  Supply Voltage  |  5～55v
 |  Antenna Interface  |  SMA
-|  Size  |  50mm*38mm*14mm
+|  Size  |  50mm * 38mm * 14mm
 |  Weight  |  39g  |
 |
 ### 1.3 Physical Dimension
