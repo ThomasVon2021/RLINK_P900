@@ -7,7 +7,9 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 
 <div  align="center">
 
-![](/images/Figure1.1.jpg)
+ <img src="./images/Figure1.1.jpg" width = "40%" height = "40%" alt="Figure1.1" align=center><br>
+  
+  Figure1.1
 
 </div>
 
@@ -37,8 +39,10 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 The module size is shown in Figure 1.2. The mounting hole is a through hole with a diameter of 3.2, which is suitable for M3 bolt.
 <div  align="center">
 
-![](/images/Figure1.2.jpg)
-
+ <img src="./images/Figure1.2.jpg" width = "70%" height = "70%" alt="Figure1.2" align=center><br>
+  
+  Figure1.2
+  
 </div>
 
 ## Part 2 Use Guide
@@ -46,7 +50,9 @@ The module size is shown in Figure 1.2. The mounting hole is a through hole with
 The RLINK module has two GH1.25 interfaces, shown in Figure 2 .1, where the left side is the power supply interface, which is recommended to use the provided circuit board for power supply, and the right side is a serial interface. 
 <div  align="center">
 
-![](/images/Figure2.1.jpg)
+ <img src="./images/Figure2.1.jpg" width = "40%" height = "40%" alt="Figure2.1" align=center><br>
+  
+  Figure2.1
 
 </div>
 
@@ -62,7 +68,9 @@ Since output power up to 1W, some controller’s and computer’s interfaces hav
 Connect RLINK(the ground end) to computer as a monitor via a data cable, it can be auto connected when using QGroundControl. While when using Mission Planner as your ground station, it is necessary to select communication port and baud rate as shown in figure 2.2 at first, click CONNECT and then wait for the connection to complete. 
 <div  align="center">
 
-![](/images/Figure2.2.jpg)
+ <img src="./images/Figure2.2.jpg" width = "70%" height = "70%" alt="Figure2.2" align=center><br>
+  
+  Figure2.2
 
 </div>
 
@@ -72,7 +80,9 @@ RLINK has been configured at the factory and generally does not require addition
 Connect RLINK(the ground end) to the computer via a data cable at first, make sure the your serial assistant can communicate with RLINK, press and hold the RLINK CONFIG key with a thimble or other sharp object. The RLINK will enter configuration mode when the serial assistant pops up the NO CARRIER 0K prompt and then release CONFIG key.
 <div  align="center">
 
-![](/images/Figure3.1.jpg)
+ <img src="./images/Figure3.1.jpg" width = "70%" height = "70%" alt="Figure3.1" align=center><br>
+  
+  Figure3.1
 
 </div>
 
@@ -154,7 +164,9 @@ AliExpress: <a href="https://pt.aliexpress.com/item/1005003061008680.html?spm=a2
 ### 5.2 The List of a RLINK Kit
 <div  align="center">
 
-![](/images/Figure5.1.jpg)
+ <img src="./images/Figure5.1.jpg" width = "70%" height = "70%" alt="Figure5.1" align=center><br>
+  
+  Figure5.1
 
 </div>
 
