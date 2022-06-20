@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">My Docs</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#rlink-handbook" class="nav-link">RLINK Handbook</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#part-1-introduction" class="nav-link">Part 1 Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#part-2-use-guide" class="nav-link">Part 2 Use Guide</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#part-3-configuration" class="nav-link">Part 3 Configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#master" class="nav-link">* Master</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#slave1" class="nav-link">* Slave1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#slave2" class="nav-link">* Slave2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#slave3" class="nav-link">* Slave3</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#part-4-precautions" class="nav-link">Part 4 Precautions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#part-5-purchase" class="nav-link">Part 5 Purchase</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="rlink-handbook">RLINK Handbook</h1>
+<h2 id="part-1-introduction">Part 1 Introduction</h2>
+<h3 id="11-summary">1.1 Summary</h3>
+<p><strong>RLINK</strong> is a long-distance wireless data link communication module developed by <strong><em>blicube.LLC</em></strong>, supporting Point to Point and Point to Multipoint. Using two RLINK modules to form a pair of data links for mutual communication, when one connected to the device end and the other connected to the computer end. With three or more RLINK modules, it can be used for Point to Multipoint.</p>
+<p>Based on bulid-in <strong>P900</strong> module, RLINK has the characteristics of high transmission power, high link rate, high receiving sensitivity, etc. The ground-to-air communication distance is up to <strong>30+KM</strong>, the transmitting power can reach  <strong>1W</strong> , besides the module supports wide voltage input (5～55V) and high-speed frequency hopping. The module has the operating temperature range of -40 to 80 degrees, with shell of CNC aviation aluminum alloy materials.</p>
+<div  align="center">
+
+ <img src="./images/Figure1.1.jpg" width = "40%" height = "40%" alt="Figure1.1" align=center><br>
+
+  Figure1.1
+
+</div>
+
+<h3 id="12-technical-specifications">1.2 Technical Specifications</h3>
+<ul>
+<li>Performance</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frequency</td>
+<td>902-928MHz</td>
+</tr>
+<tr>
+<td>Spreading Method</td>
+<td>Frequency Hopping</td>
+</tr>
+<tr>
+<td>Encryption</td>
+<td>Optional(see –AES option)</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Up to 60 KM(in theory)</td>
+</tr>
+<tr>
+<td>Forward Error Detection</td>
+<td>Hamming<br>BCH<br>Golay<br>Reed-Solomon</td>
+</tr>
+<tr>
+<td>Error Detection</td>
+<td>32 bits of CRC, ARQ</td>
+</tr>
+<tr>
+<td>Output Power</td>
+<td>100mW-1W（20-30dBm）</td>
+</tr>
+<tr>
+<td>Serial Interface</td>
+<td>3.3V TTL</td>
+</tr>
+<tr>
+<td>Baud Rate</td>
+<td>57600（default &amp; changeable）</td>
+</tr>
+<tr>
+<td>Link Rate</td>
+<td>57.6 – 276 kbps</td>
+</tr>
+<tr>
+<td>Sensitivity (@10^-4)</td>
+<td>-114 dBm @ 57.6 kbps<br>-112 dBm @ 115.2 kbps<br>-109 dBm @ 172.8 kbps<br>-107 dBm @ 230.4 kbps</td>
+</tr>
+<tr>
+<td>Blocking</td>
+<td>+/- 1 MHz &gt; 55 dBc<br>+/- 2.5 MHz &gt; 60 dBc<br>+/- 5 MHz &gt; 65 dBc<br>&gt; 930 MHz &gt; 70 dBc<br>&lt; 890 MHz &gt; 70 dBc</td>
+</tr>
+<tr>
+<td>Supply Voltage</td>
+<td>5～35v</td>
+</tr>
+<tr>
+<td>Antenna Interface</td>
+<td>SMA</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>50mm * 38mm * 14mm</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>39g</td>
+</tr>
+<tr>
+<td>Power</td>
+<td>1.5W</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-physical-dimension">1.3 Physical Dimension</h3>
+<p>The module size is shown in Figure 1.2. The mounting hole is a through hole with a diameter of 3.2, which is suitable for M3 bolt.</p>
+<div  align="center">
+
+ <img src="./images/Figure1.2.jpg" width = "70%" height = "70%" alt="Figure1.2" align=center><br>
+
+  Figure1.2
+
+</div>
+
+<h2 id="part-2-use-guide">Part 2 Use Guide</h2>
+<h3 id="21-interface">2.1 Interface</h3>
+<p>The RLINK module has two GH1.25 interfaces, shown in Figure 2 .1, where the left side is the power supply interface, which is recommended to use the provided circuit board for power supply, and the right side is a serial interface. </p>
+<div  align="center">
+
+ <img src="./images/Figure2.1.jpg" width = "40%" height = "40%" alt="Figure2.1" align=center><br>
+
+  Figure2.1
+
+</div>
+
+<h3 id="22-default-parameter">2.2 Default Parameter</h3>
+<p>RLINK has been configured when you get it. The default link rate is 115 kbps, the boud rate of serial interface is 57600, and the default broadcast mode is Point to Point. If you want to modify the relevant parameters, please refer to Part 3 for custom configurations.</p>
+<h3 id="23-communication">2.3 Communication</h3>
+<ul>
+<li><strong>Pixhawk Flight Controller</strong><br>Please connect the RLINK serial interface to controller’s Telem1 or Telem2 interface.</li>
+<li><strong>Other Devices</strong><br>Please follow the interface definition to connect the RLINK serial interface to other device serial interface (RX-TX TX-RX GND-GND), if needed.</li>
+</ul>
+<h3 id="24-power-suply">2.4 Power Suply</h3>
+<p>Since output power up to 1W, some controller’s and computer’s interfaces have not the ability to supply such high power, it is recommended strongly that using a separate battery to supply power for RLINK for the stability.</p>
+<h3 id="25-ground-station">2.5 Ground Station</h3>
+<p>Connect RLINK(the ground end) to computer as a monitor via a data cable, it can be auto connected when using QGroundControl. While when using Mission Planner as your ground station, it is necessary to select communication port and baud rate as shown in figure 2.2 at first, click CONNECT and then wait for the connection to complete. </p>
+<div  align="center">
+
+ <img src="./images/Figure2.2.jpg" width = "70%" height = "70%" alt="Figure2.2" align=center><br>
+
+  Figure2.2
+
+</div>
+
+<h2 id="part-3-configuration">Part 3 Configuration</h2>
+<p>RLINK has been configured at the factory and generally does not require additional configuration. If you need to modify the parameters, you can customize the configuration according to the instructions below.  </p>
+<h3 id="31-enter-configuration-mode">3.1 Enter Configuration Mode</h3>
+<p>Connect RLINK(the ground end) to the computer via a data cable at first, make sure the your serial assistant can communicate with RLINK, press and hold the RLINK CONFIG key with a thimble or other sharp object. The RLINK will enter configuration mode when the serial assistant pops up the NO CARRIER 0K prompt and then release CONFIG key.</p>
+<div  align="center">
+
+ <img src="./images/Figure3.1.jpg" width = "70%" height = "70%" alt="Figure3.1" align=center><br>
+
+  Figure3.1
+
+</div>
+
+<p>After entering configuration mode, the configuration can be completed by sending the relevant parameters via the serial assistant (all with OK after successful configuration). Noting that every configuration command needs to be followed by a carriage return.</p>
+<h3 id="32-common-commands-reference">3.2 Common Commands Reference</h3>
+<ul>
+<li><strong>Common commands</strong><br><blockquote>
+<p>ATS101: Operator Mode（0 – Master；1 –Repeater；2 – Slave）<br>
+ATS133: Network Type（0 – Point to Mutlipoint；1 – Point to Point）<br>
+ATS102: Serial Baud Rate（0 - 230400；1 - 115200；2 - 57600；3 - 38400；4 - 28800；5 - 19200；6 - 14400；7 - 9600；8 - 7200；9 - 4800；10 - 3600；11 - 2400；12 - 1200；13 – 600；14 - 300）<br>
+ATS103: Wireless Link Rate（0 - 172800；1 - 230400；2 - 276480；3 - 57600；4 - 115200）<br>
+ATS108: Output Power（20 - 100；21 - 125；22 - 160；23 - 200；24 - 250；25 - 320；26 - 400；27 - 500；28 - 630；29 - 900；30 -1000）<br>
+ATS104: Network Address（1 ~ 4294967295）<br>
+ATS105: Unit Address (1 ~ 65535)<br>
+ATS140: Destination Address (1 ~ 65535)</p>
+</blockquote>
+</li>
+<li><strong>Load Factory Default Configuration</strong><br><blockquote>
+<p>AT&amp;F10: Master of Point to Point<br>
+AT&amp;F11: Slave of Point to Point<br>
+AT&amp;F12: Repeater of Point to Point<br>
+AT&amp;F7: Master of Point to Multipoint<br>
+AT&amp;F8: Slave of Point to Multipoint <br>
+AT&amp;F9: Repeater of Point to Multipoint</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="33-point-to-point-configuration">3.3 Point to Point Configuration</h3>
+<p>Please copy the reference commands to the serial assistant, press enter and then click Send, and the configuration is successful with OK:</p>
+<h4 id="master-ground-end-parameter-settings"><strong>Master (ground end) parameter settings：</strong></h4>
+<ul>
+<li>Note：<br>
+ATS105: 1;<br>
+ATS140: from 2 to 65535.</li>
+<li>Example:<br>
+Set to Master mode, Baud rate of 115200, Link rate of 230400, Network address 1234567890, Output power 100mW, Unit address 1, Destination address 2.<br>
+Please follow commands below to set RLINK:</li>
+</ul>
+<hr />
+<blockquote>
+<p>AT&amp;F10<br>
+ATS101=0<br>
+ATS102=1<br>
+ATS103=1<br>
+ATS104=1234567890<br>
+ATS108=20<br>
+ATS105=1<br>
+ATS140=2<br>
+AT&amp;V<br>
+AT&amp;W</p>
+</blockquote>
+<hr />
+<h4 id="slave-remote-parameter-settings"><strong>Slave (remote) parameter settings：</strong></h4>
+<ul>
+<li>Note：<br>
+ATS105: from 2 to 65535;<br>
+ATS140: 1.</li>
+<li>Example:<br>
+Set to Slave mode, Baud rate of 115200, Link rate of 230400, Network address 1234567890, Output power 100mW, Unit address 2, Destination address 1.<br>
+Please follow commands below to set RLINK:</li>
+</ul>
+<hr />
+<blockquote>
+<p>AT&amp;F11<br>
+ATS101=2<br>
+ATS102=1<br>
+ATS103=1<br>
+ATS104=1234567890<br>
+ATS108=20<br>
+ATS105=2<br>
+ATS140=1<br>
+AT&amp;V<br>
+AT&amp;W</p>
+</blockquote>
+<hr />
+<h3 id="34-point-to-mutlipoint-configuration">3.4 Point to Mutlipoint Configuration</h3>
+<h4 id="example"><strong>EXAMPLE：</strong></h4>
+<h2 id="master">* Master</h2>
+<blockquote>
+<p>AT&amp;F7<br>
+ATS102=2<br>
+ATS103=4<br>
+ATS104=1239<br>
+ATS105=1<br>
+ATS108=30<br>
+AT&amp;W<br>
+ATA</p>
+</blockquote>
+<hr />
+<h2 id="slave1">* Slave1</h2>
+<blockquote>
+<p>AT&amp;F8<br>
+ATS102=2<br>
+ATS103=4<br>
+ATS104=1239<br>
+ATS105=2<br>
+ATS108=30<br>
+AT&amp;W<br>
+ATA</p>
+</blockquote>
+<hr />
+<h2 id="slave2">* Slave2</h2>
+<blockquote>
+<p>AT&amp;F8<br>
+ATS102=2<br>
+ATS103=4<br>
+ATS104=1239<br>
+ATS105=2<br>
+ATS108=30<br>
+AT&amp;W<br>
+ATA</p>
+</blockquote>
+<hr />
+<h2 id="slave3">* Slave3</h2>
+<blockquote>
+<p>AT&amp;F8<br>
+ATS102=2<br>
+ATS103=4<br>
+ATS104=1239<br>
+ATS105=4<br>
+ATS108=30<br>
+AT&amp;W<br>
+ATA</p>
+</blockquote>
+<hr />
+<h2 id="part-4-precautions">Part 4 Precautions</h2>
+<ul>
+<li>RLINK has been configured to be ready to use, if you modify the parameters of RLINK that cannot be used normally, please contact customer service.</li>
+<li>This product is a wireless digital transmission link, suitable for unobstructed environment, stable communication distance by the impact of the actual application site.</li>
+<li>RLINK has a maximum power of 5W, and if your computer or RLINK is not working properly, check the RLINK power supply. </li>
+<li>Remote RLINK and ground-end RLINK can be used interchangeably if used in Point to Point mode, and not interchangeable in Point to Mutlipoint mode. </li>
+</ul>
+<h2 id="part-5-purchase">Part 5 Purchase</h2>
+<h3 id="51-the-link-to-purchase">5.1 The Link to Purchase</h3>
+<p>AliExpress: <a href="https://pt.aliexpress.com/item/1005003061008680.html?spm=a2g0o.productlist.0.0.1ca3170aooF0vd&algo_pvid=fb3c219b-6ce4-468c-9860-e3b14fab8904&algo_exp_id=fb3c219b-6ce4-468c-9860-e3b14fab8904-30&pdp_ext_f=%7B%22sku_id%22%3A%2212000023685425338%22%7D" target="_blank">RLINK</a></p>
+<h3 id="52-the-list-of-a-rlink-kit">5.2 The List of a RLINK Kit</h3>
+<div  align="center">
+
+ <img src="./images/Figure5.1.jpg" width = "70%" height = "70%" alt="Figure5.1" align=center><br>
+
+  Figure5.1
+
+</div>
+
+<h3 id="53-express-delivery">5.3 Express Delivery</h3>
+<p>Appropriate logistics methods need to be adopted according to the actual situation.</p>
+<h3 id="54-wholesale">5.4 Wholesale</h3>
+<p>Wholesale prices vary depending on the quantity of the wholesale, please contact customer service for more details.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.3.0
+Build Date UTC : 2022-06-20 14:38:21.556783+00:00
+-->
