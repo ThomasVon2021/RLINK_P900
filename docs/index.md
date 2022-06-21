@@ -14,12 +14,12 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 </div>
 
 ### 1.2 Technical Specifications
-* Performance
+* Performance</br>
 
 |  Item |  Specification  |
-|  --  |  -- |
+|  :--:  |  :--: |
 |  Frequency |  902-928MHz  |
-|  Spreading Method  |  Frequency Hopping  |
+|  Spreading Method  |  Frequency Hopping  
 |  Encryption  |  Optional(see –AES option)  
 |  Range  |  Up to 60 KM(in theory)
 |  Forward Error Detection  |  Hamming<br>BCH<br>Golay<br>Reed-Solomon
@@ -33,7 +33,7 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 |  Supply Voltage  |  5～35v
 |  Antenna Interface  |  SMA
 |  Size  |  50mm * 38mm * 14mm
-|  Weight  |  39g  |
+|  Weight  |  39g  
 |  Power   |  1.5W |
 
 ### 1.3 Physical Dimension
@@ -90,113 +90,130 @@ Connect RLINK(the ground end) to the computer via a data cable at first, make su
 After entering configuration mode, the configuration can be completed by sending the relevant parameters via the serial assistant (all with OK after successful configuration). Noting that every configuration command needs to be followed by a carriage return.
 ### 3.2 Common Commands Reference
 * **Common commands**<br>
->ATS101: Operator Mode（0 – Master；1 –Repeater；2 – Slave）<br>
-ATS133: Network Type（0 – Point to Mutlipoint；1 – Point to Point）<br>
-ATS102: Serial Baud Rate（0 - 230400；1 - 115200；2 - 57600；3 - 38400；4 - 28800；5 - 19200；6 - 14400；7 - 9600；8 - 7200；9 - 4800；10 - 3600；11 - 2400；12 - 1200；13 – 600；14 - 300）<br>
-ATS103: Wireless Link Rate（0 - 172800；1 - 230400；2 - 276480；3 - 57600；4 - 115200）<br>
-ATS108: Output Power（20 - 100；21 - 125；22 - 160；23 - 200；24 - 250；25 - 320；26 - 400；27 - 500；28 - 630；29 - 900；30 -1000）<br>
-ATS104: Network Address（1 ~ 4294967295）<br>
-ATS105: Unit Address (1 ~ 65535)<br>
+```html
+ATS101: Operator Mode（0 – Master；1 –Repeater；2 – Slave）
+ATS133: Network Type（0 – Point to Mutlipoint；1 – Point to Point）
+ATS102: Serial Baud Rate（0 - 230400；1 - 115200；2 - 57600；3 - 38400；4 - 28800；5 - 19200；6 - 14400；7 - 9600；8 - 7200；9 - 4800；10 - 3600；11 - 2400；12 - 1200；13 – 600；14 - 300）
+ATS103: Wireless Link Rate（0 - 172800；1 - 230400；2 - 276480；3 - 57600；4 - 115200）
+ATS108: Output Power（20 - 100；21 - 125；22 - 160；23 - 200；24 - 250；25 - 320；26 - 400；27 - 500；28 - 630；29 - 900；30 -1000）
+ATS104: Network Address（1 ~ 4294967295）
+ATS105: Unit Address (1 ~ 65535)
 ATS140: Destination Address (1 ~ 65535)
-* **Load Factory Default Configuration**<br>
->AT&F10: Master of Point to Point<br>
-AT&F11: Slave of Point to Point<br>
-AT&F12: Repeater of Point to Point<br>
-AT&F7: Master of Point to Multipoint<br>
-AT&F8: Slave of Point to Multipoint <br>
+```
+* **Load Factory Default Configuration**
+
+```html
+AT&F10: Master of Point to Point
+AT&F11: Slave of Point to Point
+AT&F12: Repeater of Point to Point
+AT&F7: Master of Point to Multipoint
+AT&F8: Slave of Point to Multipoint 
 AT&F9: Repeater of Point to Multipoint
+```
 
 
 ### 3.3 Point to Point Configuration
-Please copy the reference commands to the serial assistant, press enter and then click Send, and the configuration is successful with OK:
-#### **Master (ground end) parameter settings：**
+Please copy the reference commands to the serial assistant, press enter and then click Send, and the configuration is successful with OK:<br>
+**Master (ground end) parameter settings：**
 * Note：<br>
 ATS105: 1;<br>
 ATS140: from 2 to 65535.
 * Example:<br>
 Set to Master mode, Baud rate of 115200, Link rate of 230400, Network address 1234567890, Output power 100mW, Unit address 1, Destination address 2.<br>
 Please follow commands below to set RLINK:
-> ---
->AT&F10<br>
-ATS101=0<br>
-ATS102=1<br>
-ATS103=1<br>
-ATS104=1234567890<br>
-ATS108=20<br>
-ATS105=1<br>
-ATS140=2<br>
-AT&V<br>
+```html
+AT&F10
+ATS101=0
+ATS102=1
+ATS103=1
+ATS104=1234567890
+ATS108=20
+ATS105=1
+ATS140=2
+AT&V
 AT&W
-> ---
-#### **Slave (remote) parameter settings：**
+```
+
+**Slave (remote) parameter settings：**<br>
+
 * Note：<br>
-ATS105: from 2 to 65535;<br>
-ATS140: 1.
+```html
+ATS105: from 2 to 65535;
+ATS140: 1
+```
 * Example:<br>
 Set to Slave mode, Baud rate of 115200, Link rate of 230400, Network address 1234567890, Output power 100mW, Unit address 2, Destination address 1.<br>
 Please follow commands below to set RLINK:
-> ---
->AT&F11<br>
-ATS101=2<br>
-ATS102=1<br>
-ATS103=1<br>
-ATS104=1234567890<br>
-ATS108=20<br>
-ATS105=2<br>
-ATS140=1<br>
-AT&V<br>
+
+```html
+AT&F11
+ATS101=2
+ATS102=1
+ATS103=1
+ATS104=1234567890
+ATS108=20
+ATS105=2
+ATS140=1
+AT&V
 AT&W
-> ---
+```
+
 
 ### 3.4 Point to Mutlipoint Configuration
-**EXAMPLE：**</br>
+**EXAMPLE：**<br>
 
 * Master
 
-> ---
->AT&F7<br>
-ATS102=2<br>
-ATS103=4<br>
-ATS104=1239<br>
-ATS105=1<br>
-ATS108=30<br>
-AT&W<br>
-ATA
-> ---
+```html
+AT&F7
+ATS102=2
+ATS103=4
+ATS104=1239
+ATS105=1
+ATS108=30
+AT&W
+```
+
 
 * Slave1
-> ---
->AT&F8<br>
-ATS102=2<br>
-ATS103=4<br>
-ATS104=1239<br>
-ATS105=2<br>
-ATS108=30<br>
-AT&W<br>
+
+```html
+AT&F8
+ATS102=2
+ATS103=4
+ATS104=1239
+ATS105=2
+ATS108=30
+AT&W
 ATA
-> ---
+```
+
 * Slave2
-> ---
->AT&F8<br>
-ATS102=2<br>
-ATS103=4<br>
-ATS104=1239<br>
-ATS105=2<br>
-ATS108=30<br>
-AT&W<br>
+
+```html
+AT&F8
+ATS102=2
+ATS103=4
+ATS104=1239
+ATS105=2
+ATS108=30
+AT&W
 ATA
-> ---
+```
+
 * Slave3
-> ---
->AT&F8<br>
-ATS102=2<br>
-ATS103=4<br>
-ATS104=1239<br>
-ATS105=4<br>
-ATS108=30<br>
-AT&W<br>
+
+```html
+AT&F8
+ATS102=2
+ATS103=4
+ATS104=1239
+ATS105=4
+ATS108=30
+AT&W
 ATA
-> ---
+```
+
 ## Part 4 Precautions
 * RLINK has been configured to be ready to use, if you modify the parameters of RLINK that cannot be used normally, please contact customer service.
 * This product is a wireless digital transmission link, suitable for unobstructed environment, stable communication distance by the impact of the actual application site.
