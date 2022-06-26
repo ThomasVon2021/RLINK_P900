@@ -919,7 +919,7 @@ Please follow commands below to set RLINK:</li>
 <ul>
 <li>Slave3</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>AT<span class="err">&amp;</span>F8
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>AT<span class="err">&amp;</span>F8
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>ATS102=2
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>ATS103=4
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>ATS104=1239
@@ -928,6 +928,13 @@ Please follow commands below to set RLINK:</li>
 <a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>AT<span class="err">&amp;</span>W
 <a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>ATA
 </code></pre></div>
+<strong>GCS Settings:</strong><br></p>
+<p>If Point to Mutlipoint Configurations are all ready,
+* Connect to each vehicle’s autopilot and the tracker and set the <code>SYSID_THISMAV</code> to a unique number (i.e. “1” for first vehicle, “2” for second vehicle, “3” for third, “9” for the tracker).
+* On the GCS, <strong>reduce data rate</strong> to <code>the minimum acceptable value</code> to reduce network traffic.<br></p>
+<p>Refercence for more:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>https://ardupilot.org/plane/docs/common-multi-vehicle-flying.html
+</code></pre></div></p>
 <h2 id="part-4-precautions">Part 4 Precautions</h2>
 <ul>
 <li>RLINK has been configured to be ready to use, if you modify the parameters of RLINK that cannot be used normally, please contact customer service.</li>

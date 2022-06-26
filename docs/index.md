@@ -18,7 +18,7 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 
 |  Item |  Specification  |
 |  :--:  |  :--: |
-|  Frequency |  902-928MHz  |
+|  Frequency |  902-928MHz  
 |  Spreading Method  |  Frequency Hopping  
 |  Encryption  |  Optional(see –AES option)  
 |  Range  |  Up to 60 KM(in theory)
@@ -34,7 +34,7 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 |  Antenna Interface  |  SMA
 |  Size  |  50mm * 38mm * 14mm
 |  Weight  |  39g  
-|  Power   |  1.5W |
+|  Power   |  1.5W 
 
 ### 1.3 Physical Dimension
 The module size is shown in Figure 1.2. The mounting hole is a through hole with a diameter of 3.2, which is suitable for M3 bolt.
@@ -212,6 +212,16 @@ ATS105=4
 ATS108=30
 AT&W
 ATA
+```
+**GCS Settings:**<br>
+
+If Point to Mutlipoint Configurations are all ready,
+* Connect to each vehicle’s autopilot and the tracker and set the ```SYSID_THISMAV``` to a unique number (i.e. “1” for first vehicle, “2” for second vehicle, “3” for third, “9” for the tracker).
+* On the GCS, **reduce data rate** to ```the minimum acceptable value``` to reduce network traffic.<br>
+
+Refercence for more:
+```html
+https://ardupilot.org/plane/docs/common-multi-vehicle-flying.html
 ```
 
 ## Part 4 Precautions
