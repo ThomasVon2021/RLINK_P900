@@ -215,8 +215,9 @@ ATA
 ```
 **GCS Settings:**<br>
 
-If Point to Mutlipoint Configurations are all ready,
-* Connect to each vehicle’s autopilot and the tracker and set the ```SYSID_THISMAV``` to a unique number (i.e. “1” for first vehicle, “2” for second vehicle, “3” for third, “9” for the tracker).
+If Point to Mutlipoint Configurations are all ready,<br>
+
+* Connect to each vehicle’s autopilot and the tracker and set the ```SYSID_THISMAV``` to a unique number (i.e. “1” for first vehicle, “2” for second vehicle, “3” for third, “9” for the tracker).<br>
 * On the GCS, **reduce data rate** to ```the minimum acceptable value``` to reduce network traffic.<br>
 
 Refercence for more:
