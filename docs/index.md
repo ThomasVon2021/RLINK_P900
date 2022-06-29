@@ -5,13 +5,8 @@
 
 Based on bulid-in **P900** module, RLINK has the characteristics of high transmission power, high link rate, high receiving sensitivity, etc. The ground-to-air communication distance is up to **30+KM**, the transmitting power can reach  **1W** , besides the module supports wide voltage input (5～55V) and high-speed frequency hopping. The module has the operating temperature range of -40 to 80 degrees, with shell of CNC aviation aluminum alloy materials.
 
-<div  align="center">
 
- <img src="./images/Figure1.1.jpg" width = "40%" height = "40%" alt="Figure1.1" align=center><br>
-  
-  Figure1.1
-
-</div>
+![](media/rlink1.2.png)
 
 ## Technical Specifications
 * Performance</br>
@@ -37,5 +32,5 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 |  Power   |  1.5W 
 
 ## User Manual
-[RLINK User Manual](RLINK_handbook_en.md)
-[RLINK用户手册](RLINK_handbook_cn.md)
+[RLINK User Manual](RLINK_handbook.md)<br>
+[RLINK用户手册](RLINK用户手册.md)

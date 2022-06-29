@@ -1,0 +1,1051 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+    
+    
+      
+        <title>RLINK Handbook - RLINK HANDBOOK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 0 1 .25-.25h5.025a.25.25 0 0 1 .177.073l6.25 6.25a.25.25 0 0 1 0 .354l-5.025 5.025a.25.25 0 0 1-.354 0l-6.25-6.25a.25.25 0 0 1-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775zM6 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 1.75a.25.25 0 0 1 .25-.25h8.5a.25.25 0 0 1 .25.25v7.736a.75.75 0 1 0 1.5 0V1.75A1.75 1.75 0 0 0 11.25 0h-8.5A1.75 1.75 0 0 0 1 1.75v11.5c0 .966.784 1.75 1.75 1.75h3.17a.75.75 0 0 0 0-1.5H2.75a.25.25 0 0 1-.25-.25V1.75zM4.75 4a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5h-4.5zM4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75zm11.774 3.537a.75.75 0 0 0-1.048-1.074L10.7 14.145 9.281 12.72a.75.75 0 0 0-1.062 1.058l1.943 1.95a.75.75 0 0 0 1.055.008l4.557-4.45z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm6.5-.25A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75zM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.489 4.489 0 0 1-.563-1.191 3.833 3.833 0 0 1-.05-2.063 4.636 4.636 0 0 1-2.025-.293.75.75 0 1 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.748.748 0 0 1 1.06 0 .75.75 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.404 2.404 0 0 1-.507-.441 3.063 3.063 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19a.753.753 0 0 1 .01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768a85.08 85.08 0 0 0-.317-.265c-.814-.68-1.75-1.462-2.692-2.619a3.74 3.74 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353V.75z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm9 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 0 1 9 6.25c0 .177-.04.264-.077.318a.956.956 0 0 1-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 0 0-.313.195 2.416 2.416 0 0 0-.692.661.75.75 0 0 0 1.248.832.956.956 0 0 1 .276-.245 6.3 6.3 0 0 1 .26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 0 0 8 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 1 0 1.342.67z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575L6.457 1.047zM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-.25-5.25a.75.75 0 0 0-1.5 0v2.5a.75.75 0 0 0 1.5 0v-2.5z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.404 12.596a6.5 6.5 0 1 1 9.192-9.192 6.5 6.5 0 0 1-9.192 9.192zM2.344 2.343a8 8 0 1 0 11.313 11.314A8 8 0 0 0 2.343 2.343zM6.03 4.97a.75.75 0 0 0-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 1 0 1.06 1.06L8 9.06l1.97 1.97a.75.75 0 1 0 1.06-1.06L9.06 8l1.97-1.97a.75.75 0 1 0-1.06-1.06L8 6.94 6.03 4.97z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.561 1.5a.016.016 0 0 0-.01.004L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006a.02.02 0 0 0-.004-.009.02.02 0 0 0-.006-.006L10.56 1.5zM9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.492 3.492 0 0 1 2.441 0l.999-1a.75.75 0 1 1 1.06 1.061l-.775.776c.616.63.995 1.493.995 2.444v.327c0 .1-.009.197-.025.292.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5c0 .409-.049.806-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A4.997 4.997 0 0 1 8 16a4.997 4.997 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5.013 5.013 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.684 1.684 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06zM6.173 5h3.654A.173.173 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173zM5.25 6.5a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75h-5.5z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458L5 5.782zM9.5 2.5h-3V6a.75.75 0 0 1-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6V2.5zm-6.9 9.847L3.775 10.5h8.45l1.175 1.847a.75.75 0 0 1-.633 1.153H3.233a.75.75 0 0 1-.633-1.153z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.75 2.5a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H1.75zm4 5a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5zm0 5a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5zM2.5 7.75a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0v-6z"/></svg>');}</style>
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rlink-handbook" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://www.blicube.com" title="RLINK HANDBOOK" class="md-header__button md-logo" aria-label="RLINK HANDBOOK" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RLINK HANDBOOK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              RLINK Handbook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ThomasVon2021/RLINK_P900" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RLINK_P900
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.blicube.com" title="RLINK HANDBOOK" class="md-nav__button md-logo" aria-label="RLINK HANDBOOK" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    RLINK HANDBOOK
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ThomasVon2021/RLINK_P900" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RLINK_P900
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        RLINK Handbook
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          RLINK Handbook
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        RLINK Handbook
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-introduction" class="md-nav__link">
+    Part 1 Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1 Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-summary" class="md-nav__link">
+    1.1 Summary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-technical-specifications" class="md-nav__link">
+    1.2 Technical Specifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-physical-dimension" class="md-nav__link">
+    1.3 Physical Dimension
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-use-guide" class="md-nav__link">
+    Part 2 Use Guide
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2 Use Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-interface" class="md-nav__link">
+    2.1 Interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-default-parameter" class="md-nav__link">
+    2.2 Default Parameter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-communication" class="md-nav__link">
+    2.3 Communication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-power-suply" class="md-nav__link">
+    2.4 Power Suply
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-ground-station" class="md-nav__link">
+    2.5 Ground Station
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-configuration" class="md-nav__link">
+    Part 3 Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 3 Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-enter-configuration-mode" class="md-nav__link">
+    3.1 Enter Configuration Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-common-commands-reference" class="md-nav__link">
+    3.2 Common Commands Reference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-point-to-point-configuration" class="md-nav__link">
+    3.3 Point to Point Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-point-to-mutlipoint-configuration" class="md-nav__link">
+    3.4 Point to Mutlipoint Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-precautions" class="md-nav__link">
+    Part 4 Precautions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-purchase" class="md-nav__link">
+    Part 5 Purchase
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 5 Purchase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-the-link-to-purchase" class="md-nav__link">
+    5.1 The Link to Purchase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-the-list-of-a-rlink-kit" class="md-nav__link">
+    5.2 The List of a RLINK Kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-express-delivery" class="md-nav__link">
+    5.3 Express Delivery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-wholesale" class="md-nav__link">
+    5.4 Wholesale
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RLINK%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" class="md-nav__link">
+        RLINK用户手册
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-introduction" class="md-nav__link">
+    Part 1 Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1 Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-summary" class="md-nav__link">
+    1.1 Summary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-technical-specifications" class="md-nav__link">
+    1.2 Technical Specifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-physical-dimension" class="md-nav__link">
+    1.3 Physical Dimension
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-use-guide" class="md-nav__link">
+    Part 2 Use Guide
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2 Use Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-interface" class="md-nav__link">
+    2.1 Interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-default-parameter" class="md-nav__link">
+    2.2 Default Parameter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-communication" class="md-nav__link">
+    2.3 Communication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-power-suply" class="md-nav__link">
+    2.4 Power Suply
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-ground-station" class="md-nav__link">
+    2.5 Ground Station
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-configuration" class="md-nav__link">
+    Part 3 Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 3 Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-enter-configuration-mode" class="md-nav__link">
+    3.1 Enter Configuration Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-common-commands-reference" class="md-nav__link">
+    3.2 Common Commands Reference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-point-to-point-configuration" class="md-nav__link">
+    3.3 Point to Point Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-point-to-mutlipoint-configuration" class="md-nav__link">
+    3.4 Point to Mutlipoint Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-precautions" class="md-nav__link">
+    Part 4 Precautions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-purchase" class="md-nav__link">
+    Part 5 Purchase
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 5 Purchase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-the-link-to-purchase" class="md-nav__link">
+    5.1 The Link to Purchase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-the-list-of-a-rlink-kit" class="md-nav__link">
+    5.2 The List of a RLINK Kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-express-delivery" class="md-nav__link">
+    5.3 Express Delivery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-wholesale" class="md-nav__link">
+    5.4 Wholesale
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/ThomasVon2021/RLINK_P900/edit/master/docs/RLINK_handbook.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="rlink-handbook">RLINK Handbook</h1>
+<h2 id="part-1-introduction">Part 1 Introduction</h2>
+<h3 id="11-summary">1.1 Summary</h3>
+<p><strong>RLINK</strong> is a long-distance wireless data link communication module developed by <strong><em>blicube.LLC</em></strong>, supporting Point to Point and Point to Multipoint. Using two RLINK modules to form a pair of data links for mutual communication, when one connected to the device end and the other connected to the computer end. With three or more RLINK modules, it can be used for Point to Multipoint.</p>
+<p>Based on bulid-in <strong>P900</strong> module, RLINK has the characteristics of high transmission power, high link rate, high receiving sensitivity, etc. The ground-to-air communication distance is up to <strong>30+KM</strong>, the transmitting power can reach  <strong>1W</strong> , besides the module supports wide voltage input (5～55V) and high-speed frequency hopping. The module has the operating temperature range of -40 to 80 degrees, with shell of CNC aviation aluminum alloy materials.</p>
+<div  align="center">
+
+![](media/rlink1.2.png)
+
+</div>
+
+<h3 id="12-technical-specifications">1.2 Technical Specifications</h3>
+<ul>
+<li>Performance</br></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Item</th>
+<th align="center">Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Frequency</td>
+<td align="center">902-928MHz</td>
+</tr>
+<tr>
+<td align="center">Spreading Method</td>
+<td align="center">Frequency Hopping</td>
+</tr>
+<tr>
+<td align="center">Encryption</td>
+<td align="center">Optional(see –AES option)</td>
+</tr>
+<tr>
+<td align="center">Range</td>
+<td align="center">Up to 60 KM(in theory)</td>
+</tr>
+<tr>
+<td align="center">Forward Error Detection</td>
+<td align="center">Hamming<br>BCH<br>Golay<br>Reed-Solomon</td>
+</tr>
+<tr>
+<td align="center">Error Detection</td>
+<td align="center">32 bits of CRC, ARQ</td>
+</tr>
+<tr>
+<td align="center">Output Power</td>
+<td align="center">100mW-1W（20-30dBm）</td>
+</tr>
+<tr>
+<td align="center">Serial Interface</td>
+<td align="center">3.3V TTL</td>
+</tr>
+<tr>
+<td align="center">Baud Rate</td>
+<td align="center">57600（default &amp; changeable）</td>
+</tr>
+<tr>
+<td align="center">Link Rate</td>
+<td align="center">57.6 – 276 kbps</td>
+</tr>
+<tr>
+<td align="center">Sensitivity (@10^-4)</td>
+<td align="center">-114 dBm @ 57.6 kbps<br>-112 dBm @ 115.2 kbps<br>-109 dBm @ 172.8 kbps<br>-107 dBm @ 230.4 kbps</td>
+</tr>
+<tr>
+<td align="center">Blocking</td>
+<td align="center">+/- 1 MHz &gt; 55 dBc<br>+/- 2.5 MHz &gt; 60 dBc<br>+/- 5 MHz &gt; 65 dBc<br>&gt; 930 MHz &gt; 70 dBc<br>&lt; 890 MHz &gt; 70 dBc</td>
+</tr>
+<tr>
+<td align="center">Supply Voltage</td>
+<td align="center">5～35v</td>
+</tr>
+<tr>
+<td align="center">Antenna Interface</td>
+<td align="center">SMA</td>
+</tr>
+<tr>
+<td align="center">Size</td>
+<td align="center">50mm * 38mm * 14mm</td>
+</tr>
+<tr>
+<td align="center">Weight</td>
+<td align="center">39g</td>
+</tr>
+<tr>
+<td align="center">Power</td>
+<td align="center">1.5W</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-physical-dimension">1.3 Physical Dimension</h3>
+<p>The module size is shown in Figure 1.2. The mounting hole is a through hole with a diameter of 3.2, which is suitable for M3 bolt.</p>
+<div  align="center">
+
+![size](media/size.png)
+
+</div>
+
+<h2 id="part-2-use-guide">Part 2 Use Guide</h2>
+<h3 id="21-interface">2.1 Interface</h3>
+<p>The RLINK module has two GH1.25 interfaces, shown in Figure 2 .1, where the left side is the power supply interface, which is recommended to use the provided circuit board for power supply, and the right side is a serial interface. </p>
+<div  align="center">
+
+![size](media/interface.png)
+
+
+</div>
+
+<h3 id="22-default-parameter">2.2 Default Parameter</h3>
+<p>RLINK has been configured when you get it. The default link rate is 115 kbps, the boud rate of serial interface is 57600, and the default broadcast mode is Point to Point. If you want to modify the relevant parameters, please refer to Part 3 for custom configurations.</p>
+<h3 id="23-communication">2.3 Communication</h3>
+<ul>
+<li><strong>Pixhawk Flight Controller</strong><br>Please connect the RLINK serial interface to controller’s Telem1 or Telem2 interface.</li>
+<li><strong>Other Devices</strong><br>Please follow the interface definition to connect the RLINK serial interface to other device serial interface (RX-TX TX-RX GND-GND), if needed.</li>
+</ul>
+<h3 id="24-power-suply">2.4 Power Suply</h3>
+<p>Since output power up to 1W, some controller’s and computer’s interfaces have not the ability to supply such high power, it is recommended strongly that using a separate battery to supply power for RLINK for the stability.</p>
+<h3 id="25-ground-station">2.5 Ground Station</h3>
+<p>Connect RLINK(the ground end) to computer as a monitor via a data cable, it can be auto connected when using QGroundControl. While when using Mission Planner as your ground station, it is necessary to select communication port and baud rate as shown in figure 2.2 at first, click CONNECT and then wait for the connection to complete. </p>
+<div  align="center">
+
+**![](media/mp.png)**
+
+</div>
+
+<h2 id="part-3-configuration">Part 3 Configuration</h2>
+<p>RLINK has been configured at the factory and generally does not require additional configuration. If you need to modify the parameters, you can customize the configuration according to the instructions below.  </p>
+<h3 id="31-enter-configuration-mode">3.1 Enter Configuration Mode</h3>
+<p>Connect RLINK(the ground end) to the computer via a data cable at first, make sure the your serial assistant can communicate with RLINK, press and hold the RLINK CONFIG key with a thimble or other sharp object. The RLINK will enter configuration mode when the serial assistant pops up the NO CARRIER 0K prompt and then release CONFIG key.</p>
+<div  align="center">
+
+![p900-config.png](media/reset.png)
+
+</div>
+
+<p>After entering configuration mode, the configuration can be completed by sending the relevant parameters via the serial assistant (all with OK after successful configuration). Noting that every configuration command needs to be followed by a carriage return.</p>
+<h3 id="32-common-commands-reference">3.2 Common Commands Reference</h3>
+<ul>
+<li><strong>Common commands</strong><br>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ATS101: Operator Mode（0 – Master；1 –Repeater；2 – Slave）
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ATS133: Network Type（0 – Point to Mutlipoint；1 – Point to Point）
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>ATS102: Serial Baud Rate（0 - 230400；1 - 115200；2 - 57600；3 - 38400；4 - 28800；5 - 19200；6 - 14400；7 - 9600；8 - 7200；9 - 4800；10 - 3600；11 - 2400；12 - 1200；13 – 600；14 - 300）
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>ATS103: Wireless Link Rate（0 - 172800；1 - 230400；2 - 276480；3 - 57600；4 - 115200）
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>ATS108: Output Power（20 - 100；21 - 125；22 - 160；23 - 200；24 - 250；25 - 320；26 - 400；27 - 500；28 - 630；29 - 900；30 -1000）
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>ATS104: Network Address（1 ~ 4294967295）
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>ATS105: Unit Address (1 ~ 65535)
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>ATS140: Destination Address (1 ~ 65535)
+</code></pre></div></li>
+<li><strong>Load Factory Default Configuration</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>AT<span class="err">&amp;</span>F10: Master of Point to Point
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>AT<span class="err">&amp;</span>F11: Slave of Point to Point
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>AT<span class="err">&amp;</span>F12: Repeater of Point to Point
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>AT<span class="err">&amp;</span>F7: Master of Point to Multipoint
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>AT<span class="err">&amp;</span>F8: Slave of Point to Multipoint 
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>AT<span class="err">&amp;</span>F9: Repeater of Point to Multipoint
+</code></pre></div>
+<h3 id="33-point-to-point-configuration">3.3 Point to Point Configuration</h3>
+<p>Please copy the reference commands to the serial assistant, press enter and then click Send, and the configuration is successful with OK:<br>
+<strong>Master (ground end) parameter settings：</strong>
+* Note：<br>
+ATS105: 1;<br>
+ATS140: from 2 to 65535.
+* Example:<br>
+Set to Master mode, Baud rate of 115200, Link rate of 230400, Network address 1234567890, Output power 100mW, Unit address 1, Destination address 2.<br>
+Please follow commands below to set RLINK:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>AT<span class="err">&amp;</span>F10
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>ATS101=0
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>ATS102=1
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>ATS103=1
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>ATS104=1234567890
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>ATS108=20
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>ATS105=1
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>ATS140=2
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>AT<span class="err">&amp;</span>V
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>AT<span class="err">&amp;</span>W
+</code></pre></div></p>
+<p><strong>Slave (remote) parameter settings：</strong><br></p>
+<ul>
+<li>Note：<br>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ATS105: from 2 to 65535;
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>ATS140: 1
+</code></pre></div></li>
+<li>Example:<br>
+Set to Slave mode, Baud rate of 115200, Link rate of 230400, Network address 1234567890, Output power 100mW, Unit address 2, Destination address 1.<br>
+Please follow commands below to set RLINK:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>AT<span class="err">&amp;</span>F11
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>ATS101=2
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>ATS102=1
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>ATS103=1
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>ATS104=1234567890
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>ATS108=20
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>ATS105=2
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>ATS140=1
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>AT<span class="err">&amp;</span>V
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>AT<span class="err">&amp;</span>W
+</code></pre></div>
+<h3 id="34-point-to-mutlipoint-configuration">3.4 Point to Mutlipoint Configuration</h3>
+<p><strong>EXAMPLE：</strong><br></p>
+<ul>
+<li>Master</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>AT<span class="err">&amp;</span>F7
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>ATS102=2
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>ATS103=4
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>ATS104=1239
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>ATS105=1
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>ATS108=30
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>AT<span class="err">&amp;</span>W
+</code></pre></div>
+<ul>
+<li>Slave1</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>AT<span class="err">&amp;</span>F8
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>ATS102=2
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>ATS103=4
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>ATS104=1239
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>ATS105=2
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>ATS108=30
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>AT<span class="err">&amp;</span>W
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>ATA
+</code></pre></div>
+<ul>
+<li>Slave2</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>AT<span class="err">&amp;</span>F8
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>ATS102=2
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>ATS103=4
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>ATS104=1239
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>ATS105=2
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>ATS108=30
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>AT<span class="err">&amp;</span>W
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>ATA
+</code></pre></div>
+<ul>
+<li>Slave3</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>AT<span class="err">&amp;</span>F8
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>ATS102=2
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>ATS103=4
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>ATS104=1239
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>ATS105=4
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>ATS108=30
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>AT<span class="err">&amp;</span>W
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>ATA
+</code></pre></div>
+<strong>GCS Settings:</strong><br></p>
+<p>If Point to Mutlipoint Configurations are all ready,<br></p>
+<ul>
+<li>Connect to each vehicle’s autopilot and the master and set the <code>SYSID_THISMAV</code> to a unique number (i.e. “1” for first vehicle, “2” for second vehicle, “3” for third).<br></li>
+<li>On the GCS, <strong><a href="https://ardupilot.org/plane/docs/common-mission-planner-telemetry-logs.html#common-mission-planner-telemetry-logs-setting-the-datarate">reduce data rate</a></strong> to <code>the minimum acceptable value</code> to reduce network traffic.<br></li>
+</ul>
+<p>Refercence for more:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>https://ardupilot.org/plane/docs/common-multi-vehicle-flying.html
+</code></pre></div></p>
+<h2 id="part-4-precautions">Part 4 Precautions</h2>
+<ul>
+<li>RLINK has been configured to be ready to use, if you modify the parameters of RLINK that cannot be used normally, please contact customer service.</li>
+<li>This product is a wireless digital transmission link, suitable for unobstructed environment, stable communication distance by the impact of the actual application site.</li>
+<li>RLINK has a maximum power of 5W, and if your computer or RLINK is not working properly, check the RLINK power supply. </li>
+<li>Remote RLINK and ground-end RLINK can be used interchangeably if used in Point to Point mode, and not interchangeable in Point to Mutlipoint mode. </li>
+</ul>
+<h2 id="part-5-purchase">Part 5 Purchase</h2>
+<h3 id="51-the-link-to-purchase">5.1 The Link to Purchase</h3>
+<p>AliExpress: <a href="https://pt.aliexpress.com/item/1005003061008680.html?spm=a2g0o.productlist.0.0.1ca3170aooF0vd&algo_pvid=fb3c219b-6ce4-468c-9860-e3b14fab8904&algo_exp_id=fb3c219b-6ce4-468c-9860-e3b14fab8904-30&pdp_ext_f=%7B%22sku_id%22%3A%2212000023685425338%22%7D" target="_blank">RLINK</a></p>
+<h3 id="52-the-list-of-a-rlink-kit">5.2 The List of a RLINK Kit</h3>
+<p><img alt="" src="../media/kit.jpeg" /></p>
+<h3 id="53-express-delivery">5.3 Express Delivery</h3>
+<p>Appropriate logistics methods need to be adopted according to the actual situation.</p>
+<h3 id="54-wholesale">5.4 Wholesale</h3>
+<p>Wholesale prices vary depending on the quantity of the wholesale, please contact customer service for more details.</p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: RLINK Handbook" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              RLINK Handbook
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../RLINK%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" class="md-footer__link md-footer__link--next" aria-label="Next: RLINK用户手册" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              RLINK用户手册
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a877e258.min.js"></script>
+      
+    
+  </body>
+</html>
