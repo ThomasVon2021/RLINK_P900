@@ -33,3 +33,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
+nav:
+
+    - "Introduction": index.md
+    - "User Manual": RLINK User Manual.md
+    - "用户手册": RLINK用户手册.md
+
+
+    - "FAQ": FAQ.md

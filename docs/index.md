@@ -3,7 +3,7 @@
 
 **RLINK** is a long-distance wireless data link communication module developed by ***blicube.LLC***, supporting Point to Point and Point to Multipoint. Using two RLINK modules to form a pair of data links for mutual communication, when one connected to the device end and the other connected to the computer end. With three or more RLINK modules, it can be used for Point to Multipoint.
 
-Based on bulid-in **P900** module, RLINK has the characteristics of high transmission power, high link rate, high receiving sensitivity, etc. The ground-to-air communication distance is up to **30+KM**, the transmitting power can reach  **1W** , besides the module supports wide voltage input (5～55V) and high-speed frequency hopping. The module has the operating temperature range of -40 to 80 degrees, with shell of CNC aviation aluminum alloy materials.
+Based on bulit-in **P900** module, RLINK has the characteristics of high transmission power, high link rate, high receiving sensitivity, etc. The ground-to-air communication distance is up to **30+KM**, the transmitting power can reach  **1W** , besides the module supports wide voltage input (5～55V) and high-speed frequency hopping. The module has the operating temperature range of -40 to 80 degrees, with shell of CNC aviation aluminum alloy materials.
 
 
 ![](media/rlink1.2.png)
@@ -16,7 +16,7 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 |  Frequency |  902-928MHz  
 |  Spreading Method  |  Frequency Hopping  
 |  Encryption  |  Optional(see –AES option)  
-|  Range  |  Up to 60 KM(in theory)
+|  Range  |  Up to 60 KM(realistically 30+KM)
 |  Forward Error Detection  |  Hamming<br>BCH<br>Golay<br>Reed-Solomon
 |  Error Detection  |  32 bits of CRC, ARQ
 |  Output Power  |  100mW-1W（20-30dBm）
@@ -32,5 +32,5 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 |  Power   |  1.5W 
 
 ## User Manual
-[RLINK User Manual](RLINK_handbook.md)<br>
+[RLINK User Manual](RLINK%20User%20Manual.md)<br>
 [RLINK用户手册](RLINK用户手册.md)
