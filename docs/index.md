@@ -32,5 +32,5 @@ Based on bulit-in **P900** module, RLINK has the characteristics of high transmi
 |  Power   |  1.5W 
 
 ## User Manual
-[RLINK User Manual](RLINK%20User%20Manual.md)<br>
+[RLINK User Manual](RLINK_User_Manual.md)<br>
 [RLINK用户手册](RLINK用户手册.md)

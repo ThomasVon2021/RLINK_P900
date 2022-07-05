@@ -37,7 +37,7 @@ markdown_extensions:
 nav:
 
     - "Introduction": index.md
-    - "User Manual": RLINK User Manual.md
+    - "User Manual": RLINK_User_Manual.md
     - "用户手册": RLINK用户手册.md
 
 

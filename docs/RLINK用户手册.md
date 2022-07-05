@@ -26,6 +26,7 @@ RLINK是BLI（北力电子）研发的远距离无线数据链路通讯模块，
 RLINK模块基于P900模组设计，拥有高功率、高速率、高接收灵敏度等特性。地空通信距离高达30KM以上，设备为航空CNC外壳，发射功率可达1W，工业级工作范围（-40～80度），宽压输入（5～35V），高速跳频。
 
 ![](media/rlink1.2.png)
+
 <center>
 
 图1.1 RLINK系统实物图
@@ -60,6 +61,7 @@ RLINK模块基于P900模组设计，拥有高功率、高速率、高接收灵�
 模块尺寸如图1.2所示，安装孔位为直径3.2的通孔，适用于M3的螺柱安装。
 
 ![size](media/size.png)
+
 <center>
 图1.2尺寸示意图
 </center>
@@ -71,6 +73,7 @@ RLINK模块基于P900模组设计，拥有高功率、高速率、高接收灵�
 RLINK模块共有两个GH1.25的接口如图2.1所示。如图2.1左部分电源输入接口，可直接使用提供的电源接口配线使用；右部分为串口接口。
 
 ![size](media/interface.png)
+
 <center>
 
 图2.1 RLINK接口图
@@ -93,6 +96,7 @@ Pixhawk系列：插入到飞控的telem1或者telem2 接口。
 与PIX的地面站都兼容，mp地面站连接时请选择端口和波特率，点连接；qgc地面站插上后自动连接。
 
 **![](media/mp.png)**
+
 <center>
 图2.2 MP地面站连接示意图
 </center>
@@ -177,7 +181,7 @@ AT&W
 
 - **从机设置（天空端） 参数：**
 
-ATS105范围：2 \~ 65535；
+ATS105范围：2 ~ 65535；
 
 ATS140范围：1；
 
@@ -255,6 +259,7 @@ ATS108=30
 AT&W
 ATA
 ```
+
 **飞控参数设置:**<br>
 
 如果您的RLINK套件已配置一站多机模式,<br>
@@ -263,6 +268,7 @@ ATA
 * 在地面站中, [减少数据传输量](https://ardupilot.org/plane/docs/common-mission-planner-telemetry-logs.html#common-mission-planner-telemetry-logs-setting-the-datarate) 至 ```最小需要的量``` 来避免通信带宽不够带来的链路阻塞问题.<br>
 
 更多一站多机设置可参考:
+
 ```html
 https://ardupilot.org/plane/docs/common-multi-vehicle-flying.html
 ```

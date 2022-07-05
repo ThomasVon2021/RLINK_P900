@@ -20,6 +20,6 @@
 
 * How can I make RLINK work in point to multipoint mode?
 
-> A. You can leave message to us before we send it to you, or follow [RLINK User Manual](RLINK%20User%20Manual.md) for more details.
+> A. You can leave message to us before we send it to you, or follow [RLINK User Manual](RLINK_User_Manual.md) for more details.
 
 

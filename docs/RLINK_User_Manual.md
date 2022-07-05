@@ -5,11 +5,10 @@
 
 Based on bulid-in **P900** module, RLINK has the characteristics of high transmission power, high link rate, high receiving sensitivity, etc. The ground-to-air communication distance is up to **30+KM**, the transmitting power can reach  **1W** , besides the module supports wide voltage input (5～55V) and high-speed frequency hopping. The module has the operating temperature range of -40 to 80 degrees, with shell of CNC aviation aluminum alloy materials.
 
-<div  align="center">
 
 ![](media/rlink1.2.png)
 
-</div>
+
 
 ### 1.2 Technical Specifications
 * Performance</br>
@@ -36,21 +35,21 @@ Based on bulid-in **P900** module, RLINK has the characteristics of high transmi
 
 ### 1.3 Physical Dimension
 The module size is shown in Figure 1.2. The mounting hole is a through hole with a diameter of 3.2, which is suitable for M3 bolt.
-<div  align="center">
+
 
 ![size](media/size.png)
   
-</div>
+
 
 ## Part 2 Use Guide
 ### 2.1 Interface
 The RLINK module has two GH1.25 interfaces, shown in Figure 2 .1, where the left side is the power supply interface, which is recommended to use the provided circuit board for power supply, and the right side is a serial interface. 
-<div  align="center">
+
 
 ![size](media/interface.png)
 
 
-</div>
+
 
 ### 2.2 Default Parameter
 RLINK has been configured when you get it. The default link rate is 115 kbps, the boud rate of serial interface is 57600, and the default broadcast mode is Point to Point. If you want to modify the relevant parameters, please refer to Part 3 for custom configurations.
@@ -62,21 +61,21 @@ RLINK has been configured when you get it. The default link rate is 115 kbps, th
 Since output power up to 1W, some controller’s and computer’s interfaces have not the ability to supply such high power, it is recommended strongly that using a separate battery to supply power for RLINK for the stability.
 ### 2.5 Ground Station 
 Connect RLINK(the ground end) to computer as a monitor via a data cable, it can be auto connected when using QGroundControl. While when using Mission Planner as your ground station, it is necessary to select communication port and baud rate as shown in figure 2.2 at first, click CONNECT and then wait for the connection to complete. 
-<div  align="center">
+
 
 **![](media/mp.png)**
 
-</div>
+
 
 ## Part 3 Configuration
 RLINK has been configured at the factory and generally does not require additional configuration. If you need to modify the parameters, you can customize the configuration according to the instructions below.  
 ### 3.1 Enter Configuration Mode
 Connect RLINK(the ground end) to the computer via a data cable at first, make sure the your serial assistant can communicate with RLINK, press and hold the RLINK CONFIG key with a thimble or other sharp object. The RLINK will enter configuration mode when the serial assistant pops up the NO CARRIER 0K prompt and then release CONFIG key.
-<div  align="center">
+
 
 ![p900-config.png](media/reset.png)
 
-</div>
+
 
 After entering configuration mode, the configuration can be completed by sending the relevant parameters via the serial assistant (all with OK after successful configuration). Noting that every configuration command needs to be followed by a carriage return.
 ### 3.2 Common Commands Reference
