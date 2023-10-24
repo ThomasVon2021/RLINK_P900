@@ -395,6 +395,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#34-pixhawk" class="md-nav__link">
+    3.4 Pixhawk遥测数据回传
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -553,6 +560,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#34-pixhawk" class="md-nav__link">
+    3.4 Pixhawk遥测数据回传
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -683,7 +697,7 @@
 </tr>
 <tr>
 <td>波特率（出厂）</td>
-<td>57600（可改）</td>
+<td>115200（可改）</td>
 </tr>
 <tr>
 <td>空速</td>
@@ -752,7 +766,7 @@
 <p><center>
 图3.1 成功进入配置模式示意图
 </center></p>
-<p>在串口助手中填入参数后，点发送，就可以完成配置（配置成功后面都带有ok），注意配置命令后面需要加回车（ <strong>CRLF</strong> ）。</p>
+<p>在串口助手中填入参数后，点发送，就可以完成配置（配置成功后面都带有ok）。</p>
 <ul>
 <li><strong>常用参数说明</strong></li>
 </ul>
@@ -791,7 +805,7 @@
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ATS105范围：1；
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>ATS140范围：2 \~ 65535；
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>ATS140范围：2 ~ 65535；
 </code></pre></div>
 <p>以下参数说明：设为主机模式、波特率为57600、空速为230400、网络IP1234567890、发射功率100mW、设备地址1、目标地址2。</p>
 <p><strong>参数</strong></p>
@@ -887,10 +901,21 @@
 <p>更多一站多机设置可参考:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>https://ardupilot.org/plane/docs/common-multi-vehicle-flying.html
 </code></pre></div>
+<h3 id="34-pixhawk">3.4 Pixhawk遥测数据回传</h3>
+<p>!!!Info 设置的回传速率仅代表请求速率，实际速率会根据数传带宽和传输数据量调整
+    如需使用最高空速请配合调整RLINK波特率为230400</p>
+<p><strong>MP连接飞控后，请按需求调整遥测速率</strong></p>
+<p><img alt="" src="../media/mission-planner-planner.png" /></p>
+<div class="admonition info mavlink inspector观测遥测数据回传速率">
+<p class="admonition-title">Info</p>
+<p>Mission Planner主界面CTRL+F后，选择Mavlink Inspector</p>
+</div>
+<p><img alt="" src="../media/mission-planner-mavlink.png" /></p>
+<p><img alt="" src="../media/mission-planner-inspector.png" /></p>
 <h2 id="4">4 注意事项</h2>
 <p>1、使用本公司RLINK套装，出厂已配置好，支持即插即用，若自己更改配置后RLINK不能正常使用，请联系客服。</p>
 <p>2、本产品为无线数传链路，适用于无遮挡环境，稳定通信距离受实际应用场地的影响。</p>
-<p>3、RLINK最大功率为5W，若电脑或设备不能正常工作，请检查RLINK供电。</p>
+<p>3、RLINK最大功率为1.5W，若电脑或设备不能正常工作，请检查RLINK供电。</p>
 <p>4、若只是一对数传即点对点模式使用，移动端RLINK和地面端RLINK可任意互换使用；若为一站多机模式，不可互换使用。</p>
 <h2 id="5-rlink">5 RLINK购买</h2>
 <p>1、购买地址</p>

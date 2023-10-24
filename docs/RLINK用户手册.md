@@ -47,7 +47,7 @@ RLINK模块基于P900模组设计，拥有高功率、高速率、高接收灵�
 | 输入电压     | 5～35v              |
 | 输出功率              | 100mW-1W（20-30dBm） |
 | 串行接口              | 3.3V TTL           |
-| 波特率（出厂）        | 57600（可改）          |
+| 波特率（出厂）        | 115200（可改）          |
 | 空速                  | 115 – 276 kbps     |
 | 数据接口              | GH1.25-5P          |
 | 天线接口              | SMA内针              |
@@ -115,7 +115,7 @@ RLINK出厂时已经已经配置完成，一般不需要您进行本文的配置
 图3.1 成功进入配置模式示意图
 </center>
 
-在串口助手中填入参数后，点发送，就可以完成配置（配置成功后面都带有ok），注意配置命令后面需要加回车（ **CRLF** ）。
+在串口助手中填入参数后，点发送，就可以完成配置（配置成功后面都带有ok）。
 
 -   **常用参数说明**
 
@@ -159,7 +159,7 @@ AT&F9: 设置点对多点中转的默认参数
 ```html
 ATS105范围：1；
 
-ATS140范围：2 \~ 65535；
+ATS140范围：2 ~ 65535；
 ```
 
 以下参数说明：设为主机模式、波特率为57600、空速为230400、网络IP1234567890、发射功率100mW、设备地址1、目标地址2。
@@ -272,6 +272,22 @@ ATA
 ```html
 https://ardupilot.org/plane/docs/common-multi-vehicle-flying.html
 ```
+### 3.4 Pixhawk遥测数据回传
+
+!!!Info 设置的回传速率仅代表请求速率，实际速率会根据数传带宽和传输数据量调整
+    如需使用最高空速请配合调整RLINK波特率为230400
+
+**MP连接飞控后，请按需求调整遥测速率**
+
+![](media/mission-planner-planner.png)
+
+!!!Info Mavlink Inspector观测遥测数据回传速率
+    Mission Planner主界面CTRL+F后，选择Mavlink Inspector
+
+![](media/mission-planner-mavlink.png)
+
+![](media/mission-planner-inspector.png)
+
 
 ## 4 注意事项
 
@@ -279,7 +295,7 @@ https://ardupilot.org/plane/docs/common-multi-vehicle-flying.html
 
 2、本产品为无线数传链路，适用于无遮挡环境，稳定通信距离受实际应用场地的影响。
 
-3、RLINK最大功率为5W，若电脑或设备不能正常工作，请检查RLINK供电。
+3、RLINK最大功率为1.5W，若电脑或设备不能正常工作，请检查RLINK供电。
 
 4、若只是一对数传即点对点模式使用，移动端RLINK和地面端RLINK可任意互换使用；若为一站多机模式，不可互换使用。
 
